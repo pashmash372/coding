@@ -28,5 +28,6 @@ int main(){
 			ans-=no/temp;		
 	}
 	cout<<ans;
+	cout<<endl;
 	return 0;
 }
