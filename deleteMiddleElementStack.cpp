@@ -25,7 +25,7 @@ stack<int> midDel(stack<int>& s){
     }
     int k=s.size()/2+1;
     solve(s,k);
-    return s;S
+    return s;
 }
 int main(){
     stack <int> s;
