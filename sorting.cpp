@@ -23,7 +23,7 @@ void sort (vector<int>&v){
 int main(){
     cout<<"Hello world ";
     vector <int> v; 
-    v={5 ,4 ,3, 2, 1 ,8};
+    v={5 ,4 ,3, 2, 1 ,8,7,23,4574,12} ;
     sort(v);
    for (int i :v)
        cout<<i<<" "; 
