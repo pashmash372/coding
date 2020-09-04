@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int firstOccurence(int arr[], int ele, int size)
+int lastOccurence(int arr[], int ele, int size)
 {
     int start = 0;
     int end = size - 1;
@@ -31,7 +31,7 @@ int main()
     int arr[] = {2, 4, 10, 10, 10, 20};
     int ele = 10;
     int size = sizeof(arr) / sizeof(arr[0]);
-    int pos = firstOccurence(arr, ele, size);
+    int pos = lastOccurence(arr, ele, size);
     if (pos != -1)
     {
         cout << pos;
