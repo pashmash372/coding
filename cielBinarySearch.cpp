@@ -11,7 +11,7 @@ int cielBinarySearch(int arr[], int ele, int size)
         mid = start + (end - start) / 2;
         if (ele == arr[mid])
         {
-            return mid;
+            return arr[mid];
         }
         else if (ele < arr[mid])
         {
