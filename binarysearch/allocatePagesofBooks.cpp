@@ -23,7 +23,7 @@ bool isValid(int arr[], int n, int k, int mx)
 
 void solve(int arr[], int k, int size)
 {
-    //*max_element find the max element in array
+    //*max_element fin mx=0;d the max element in array
     int start = *max_element(arr, arr + size);
     // accumulate gives the sum of arr or vector
     int end = accumulate(arr, arr + size, 0);

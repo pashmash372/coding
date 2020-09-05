@@ -3,6 +3,8 @@ using namespace std;
 
 priority_queue<int, vector<int>, greater<int>> minh;
 vector<int> v;
+
+
 void minheap(int arr[], int size, int k)
 {
     for (int i = 0; i < size; i++)
