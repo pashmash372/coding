@@ -4,6 +4,7 @@ void solve(vector<int> v, int k, int index, int &ans)
 {
     if (v.size() == 1)
     {
+
         ans = v[0];
         return;
     }
@@ -13,16 +14,20 @@ void solve(vector<int> v, int k, int index, int &ans)
 }
 int main()
 {
-    int n = 14;
+    int n = 5;
     int k = 2;
     int ans = 0;
     int index = 0;
     vector<int> v;
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
         v.push_back(i);
     }
-    // k--;
+     for (int i = 0; i <v.size(); i++)
+    {
+        cout<<v[i]<<" ";
+    }
+    k--;
 
     solve(v, k, index, ans);
     cout<<ans;
