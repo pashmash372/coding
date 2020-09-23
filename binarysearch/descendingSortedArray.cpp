@@ -28,7 +28,7 @@ int main()
 {
 
     int arr[] = {20,17,15,14,13,12,10,9,8,4};
-    int ele = 20;
+    int ele = 4;
     int size = sizeof(arr) / sizeof(arr[0]);
     int pos = binarySearch(arr, ele, size);
     if (pos != -1)
