@@ -28,7 +28,8 @@ int sortedRotatedArray(int arr[], int size)
 }
 int main()
 {
-    int arr[] = {11, 12, 15, 18,19,202,2020,2342, 2, 5, 6, 8};
+    // int arr[] = {11, 12, 15, 18,19,202,2020,2342, 2, 5, 6, 8};
+    int arr[]={11,12,15,18,2,5,6,8};
     int size = sizeof(arr) / sizeof(arr[0]);
     cout << sortedRotatedArray(arr, size) << endl;
     return 0;

@@ -19,9 +19,11 @@ int knapSack(int W, int wt[], int val[], int n)
 
 int main()
 {
-    int val[] = {60, 100, 120};
-    int wt[] = {10, 20, 30};
-    int W = 50;
+    // int val[] = {60, 100, 120};
+    // int wt[] = {10, 20, 30};
+    int wt[] = {1, 3, 4,5};
+    int val[] = {1, 4, 5,7};
+    int W = 7;
     int n = sizeof(val) / sizeof(val[0]);
     cout << knapSack(W, wt, val, n);
     return 0;
