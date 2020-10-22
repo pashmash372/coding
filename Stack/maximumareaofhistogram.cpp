@@ -8,7 +8,7 @@ stack<p> s;
 
 void nsrwithpair(int arr[], int size)
 {
-    for (int i = size-1; i >=0; i--)
+    for (int i = size - 1; i >= 0; i--)
     {
         if (s.size() == 0)
         {
@@ -35,9 +35,8 @@ void nsrwithpair(int arr[], int size)
         }
 
         s.push(make_pair(arr[i], i));
-        
     }
-    reverse(rightV.begin(),rightV.end());
+    reverse(rightV.begin(), rightV.end());
 }
 void nslwithpair(int arr[], int size)
 {
@@ -73,23 +72,26 @@ void nslwithpair(int arr[], int size)
 void maxAreaOfHistogram(int arr[], int size)
 {
     nsrwithpair(arr, size);
-    while(!s.empty()){
+    while (!s.empty())
+    {
         s.pop();
     }
     nslwithpair(arr, size);
     // vector <int> width;
-    int width=0;
-    int area=0;
-    for (int i=0;i<rightV.size();i++){
-        width=rightV[i]-leftV[i]-1;        
-        area=max(area,arr[i]*width);
+    int width = 0;
+    int area = 0;
+    for (int i = 0; i < rightV.size(); i++)
+    {
+        width = rightV[i] - leftV[i] - 1;
+        area = max(area, arr[i] * width);
     }
-    cout<<"Maximum Area of Histogram"<<area;
+    cout << "Maximum Area of Histogram" << area;
 }
 
 int main()
 {
-    int arr[] = {6, 2, 5, 4, 5, 1, 6};
+    // int arr[] = {6, 2, 5, 4, 5, 1, 6};
+    int arr[] = {1};
     int size = sizeof(arr) / sizeof(arr[0]);
     maxAreaOfHistogram(arr, size);
     return 0;

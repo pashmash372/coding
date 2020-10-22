@@ -19,7 +19,7 @@ void printSubsets(string ip)
 }
 int main()
 {
-    string input = "ab";
+    string input = "123";
     printSubsets(input);
     return 0;
 }

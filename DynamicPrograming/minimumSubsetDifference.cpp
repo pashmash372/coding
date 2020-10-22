@@ -63,7 +63,9 @@ int minimumSubsetDifference(int arr[], int sum, int n)
 }
 int main()
 {
-    int arr[] = {1, 6, 11, 5};
+    // int arr[] = {1, 6, 11, 5};
+    int arr[] = {1,2,7};
+
 
     int range = 0;
     int n = sizeof(arr) / sizeof(arr[0]);

@@ -5,7 +5,7 @@ using namespace std;
 
 
 
-int lcs(char X[], char Y[], int m, int n)
+int lcs(string X, string Y, int m, int n)
 {
     int t[m+1][n+1];
     
@@ -30,11 +30,13 @@ int lcs(char X[], char Y[], int m, int n)
 
 int main()
 {
-    char X[] = "aabb";
-    char Y[] = "aabb";
+    string X = "AABEBCDD";
+    string Y=X;
+    
+   
 
-    int m = strlen(X);
-    int n = strlen(Y);
+    int m = X.length();
+    int n = Y.length();
   
 
     cout << "Length of LCS is " << lcs(X, Y, m, n);
